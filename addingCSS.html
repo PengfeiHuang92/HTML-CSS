@@ -1,0 +1,36 @@
+<!--
+    Three ways to add CSS, External CSS, Internal CSS, and Inline CSS
+
+    CSS Specificity : https://www.w3schools.com/css/css_specificity.asp
+        External CSS <  Internal CSS < Inline CSS
+-->  
+<html>
+<header>
+    <title>Three ways to add CSS</title>
+
+    <!--Start of Internal CSS-->
+    <link rel="stylesheet" href="addingCSS.css">
+    <!--End of  Internal CSS-->
+
+        <!--Start of External CSS -->
+    <style>
+        h1{
+            color:green;
+        }
+    </style>
+        <!--End of External CSS -->
+
+</header>
+<body>
+    <h1>External CSS</h1>
+    <h2>Internal CSS</h2>
+    <h3 style="color:blue">Inline CSS</h3>
+    <hr>
+    
+    <h4> Header </h4>
+    <h4 class="subtitle"> Class Selector </h4>
+    <h4 class="subtitle" id="subtitle-id"> Id Seletor</h4>
+    <h4 class="subtitle" id="subtitle-id" style="color:brown"> inline CSS</h4>
+</body>
+
+</html>

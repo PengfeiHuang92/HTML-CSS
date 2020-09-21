@@ -1,0 +1,78 @@
+<html style="font-size: 20px;"> 
+    <!-- 
+        ul is the parent of li, li is the child of ul
+
+        Pseudo-classes :  
+        Pseudo-elements ::
+    -->
+<head>
+    <meta charset="utf-8">
+    <title>Pseudo-classes </title>
+    <style>
+        /*only effects if ul parent only has one child */
+        li:only-child{
+            color:blue;
+        }
+        
+        /*only effects first child of ul*/
+        li:first-child{
+            color:blueviolet;
+        }
+        
+        /*only effects last child of ul*/
+        li:last-child{
+            color:pink;
+        }
+        
+        /*only effects every second child of ul*/
+        li:nth-child(2){
+            color:green;
+        }
+
+        /*only effects when mouse over */
+        p:hover{
+            color:blueviolet;
+        }
+
+        /*adding content before the text*/
+        #before-affter:before{
+            content:"< --- Before this paragraph --->";
+        }
+        /*adding content after the text*/
+        #before-affter:after{
+            content:"< --- After this parahraph --->";
+        }
+
+        /*only effexts when the link has nnot been clicked */
+        a:link{
+            color:green;
+        }
+        /*only effexts when the link has been clicked */
+        a:visited{
+            color:red;
+        }
+        /*only effects when mouse over */
+        a:hover{
+            color:chocolate;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Only Child </li>
+    </ul>
+    <hr>
+    <ul>
+        <li>First Child  </li>
+        <li>Second Child  </li>
+        <li>Last Child  </li>
+    </ul>
+    <hr>
+    <p>psudo class :hover </p>
+    <hr>
+    <p id="before-affter"> Text </p>
+    <hr>
+    <a href="http://www.google.com">Link to Google</a>
+    
+</body>
+</html>

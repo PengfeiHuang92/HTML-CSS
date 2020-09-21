@@ -1,0 +1,14 @@
+h2{
+    color:purple;
+}
+.subtitle{
+    color: coral;
+}
+#subtitle-id{
+    color: darkslategrey;
+}
+
+
+html{
+    font-size: 40px;
+}
