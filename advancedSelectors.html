@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- The different between + and ~ selector
+    The different between Child Selector(A > B) and Descendant Selector("A B")
+-->
+<html>
+    <head>
+        <title>Advanced Selectores</title>
+        <style>
+            /* All the a tap after h2*/
+            h2 + a {
+                text-decoration: none;
+                color: crimson;
+                font-size: 30px;
+            }
+            /* only effects when input and button are within the same parent*/
+            input ~ button{
+                background-color:lightcoral;
+            }
+            /* child selector*/
+            ul > li{
+                color: blue;
+            }
+
+            /*descendant selector*/
+            /* ul li{
+                color: blue;
+            } */
+            
+           
+        </style>
+    </head>
+    <body>
+        <!--The different between selector + and selector ~ 
+           "A + B" effects all the tap B right after A
+           "A ~ B" effects only if A and B are in the same partent
+        -->
+        <h2>Hello World</h2>
+
+        <a href="http://google.com">Google</a>
+        <!-- input tap and button tap under the same parent of td -->
+        <table><tr><td>
+                    <input type="text">
+                    <button>Button inside of table</button>
+                </td></tr>
+        </table>
+        <!-- input tap and button tap are not under the same parent -->
+        <table><tr><td>
+                    <input type="text">
+                </td></tr>
+        </table>
+        <button>Button outside of table</button><br>
+        <!-- input tap and button tap under the same parent of body -->
+        <input type="text">
+        <button>Button outside of table</button>
+        
+        <hr>
+        <!--The different between Child selector(A > B) and Descendant selector(A B)     
+           "A > B" effects all the tap B when B is directly child of A
+           "A   B" effects all the tap B when B is the under tap A or under A's Children
+        -->
+        <ul>
+            <li>Child A</li>
+            <li><ol>
+                <li> ol's Child A within li of ul </li>
+            </ol></li>
+        </ul>
+
+        <ul>
+            <li>Child A</li>
+            <ol>
+                <li>ol's Child A no within li of ul</li>
+            </ol>
+           
+        </ul>
+
+    </body>
+</html>
