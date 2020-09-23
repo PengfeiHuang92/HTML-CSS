@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+            Background images
+    </title>
+    <style>
+   
+        #abackground{
+            padding: 20px;
+            width: 300px;
+            background-image: url(image.jpg);
+        }
+        /* Tilling a background image */
+        #bbackground{
+            padding: 20px;
+            width: 300px;
+            background-image:url(image.jpg);
+            background-repeat:no-repeat;
+        }
+        /* attaching the background image
+            setting the background image position with center
+            tilling the background with no-repeat
+            Setting the background size
+        */
+        #cbackground{
+            padding: 400px;
+            width: 300;
+            background:url(image.jpg);
+            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 50% 40%;
+        }
+        /* cliping with content-box*/
+        #dbackground{
+            padding: 10px;
+            background-color: aqua;
+            border: dotted 20px;
+            background-clip: content-box;
+        }
+        /* cliping with padding-box*/
+        #ebackground{
+            padding: 10px;
+            background-color: aqua;
+            border: dotted 20px;
+            background-clip: padding-box;
+        }
+        /* cliping with border-box*/
+        #fbackground{
+            padding: 10px;
+            background-color: aqua;
+            border: dotted 20px;
+            background-clip: border-box;
+        }
+        
+        #gbackground{
+            font-size: 30px;
+            position: relative;;
+            height: 500px;
+            background-image: url(image.jpg);
+            background-repeat: no-repeat;
+            border: 5px solid;
+            background-origin: content-box;
+        }
+        div.contentCenter{
+            position: absolute;
+            top: 45%;
+            left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div id="abackground">
+        <p>background image with default property</p>
+    </div>
+    <br>
+    
+    <div id="bbackground">
+        <p>Tilling a background with no-repeat ....</p>
+    </div>
+    <br>
+    
+    <div id="cbackground" >
+        <p>attaching the background with fixed (watermarks) </p>
+    </div>
+
+    <div id="dbackground">
+        <p>clipping: content-box..</p>
+    </div>
+    <br>
+    <div id="ebackground">
+        <p>clipping: padding-box ..</p>
+    </div>
+    <br>
+    <div id="fbackground">
+        <p>clipping: border-box ..</p>
+    </div>
+
+    <div id="gbackground">
+        <div class="contentCenter">
+        <p>origin: content-box ..</p>
+        </div>
+    </div>
+    <div id="hbackground">
+        <p>origin: padding-box ..</p>
+    </div>
+    <div id="jbackground">
+        <p>origin: border-box ..</p>
+    </div>
+</body>
+</html>
