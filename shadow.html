@@ -1,0 +1,68 @@
+<html>
+    <!--  
+          text-shadow: color offsetX offsetY blur
+          box-shadow: color offsetX offsetY blur size(option)
+
+          text-shadow: shadow1, shadow2,...
+          box-shadow: shadow1, shadow2, ...
+
+          box-shadow: inset color offsetX offsetY blur  //the shadow direction are opposite
+          
+    -->
+    
+    <head>
+        <title>
+            Text Shadows, Box Shadows, and Reflection 
+        </title>
+        <style>
+            html{
+                font-size: 30px;
+            }
+            #ashadow{
+                text-shadow: red 10px 20px 5px; /*left 10px, bottom 20px */
+            }
+            #bshadow{
+                text-shadow: red -10px 20px 5px;/*right 10px, bottom 20px */
+            }
+            #cshadow{
+                text-shadow: red 10px -20px 5px; /*left 10px, top 20px */
+            }
+            #dshadow{
+                text-shadow: red -10px -20px 5px; /*right 10px, top 20px */
+            }
+            #eshadow{
+                text-shadow: red 20px 20px 2px, red -20px -20px 2px;
+            }
+            #aimgshadow{
+                padding: 5%;
+                box-shadow: red -15px -10px 20px 10px; /*with the size 10px wider and taller than normal*/
+            }
+            #bimgshadow{
+                padding: 5%;
+                box-shadow: inset green -15px -10px 20px;
+            }
+            #cimgshadow{
+                -webkit-box-reflect: below 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Text Shadow</h1>
+        <p id="ashadow">10px 20px 8px .</p>
+        <p id="bshadow">-10px 20px 5px .</p>
+        <br>
+        <p id="cshadow">10px 10px 8px .</p>
+        <p id="dshadow">10px 10px 8px .</p>
+        <p id="eshadow">mutipul shadows .</p>
+        <hr>
+        <h1>Image Shadow</h1>
+     
+   
+        <img id="aimgshadow"src="image.jpg" width="300" height="200" >
+        <img id="cimgshadow"src="image.jpg" width="300" height="200" >
+        <p>
+        <img id="bimgshadow"src="image.jpg" width="300" height="200" > 
+        
+        
+    </body>
+</html>

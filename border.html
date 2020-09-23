@@ -1,0 +1,47 @@
+<html style="font-size: 40px;">
+
+<head>
+    <title>Border Design</title>
+    <style>
+        #aBorder{
+            border-width: 10px;
+            border-style: ridge;
+            border-top-color: blue; 
+            border-color:blue green red brown;
+        }
+        #bBorder{
+            border-top-style: solid;
+            border-top-color: blue;
+        }
+        #cBorder{
+            border: 10px ridge gray;
+        }
+        #dBorder{
+            border-style: solid;
+            border-radius: 10px 40px ;
+        }
+        #eBorder{
+            border-style: double;
+            border-top-left-radius: 90px 20px;
+        }
+        #fBorder{
+            border-style: double;
+            border-radius: 20px/50px;
+        }
+        #imgBorder{
+            border: 20px solid;
+            border-image: url(image.jpg) 50 stretch;
+        }
+    </style>
+</head>
+<body>
+    <p id="aBorder">This is a border </p>
+    <p id="bBorder">This is a border</p>
+    <p id="cBorder">This is a border</p>
+
+    <p id="dBorder">This is a rounded Corners</p>
+    <p id="eBorder">This is a elongated Corners with 90px for top, and 20px for left </p>
+    <p id="fBorder">This is a rounded Corners</p>
+    <p id="imgBorder"> This is a iamge border</p>
+</body>
+</html>
