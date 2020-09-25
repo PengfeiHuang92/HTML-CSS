@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Gradient </title>
+        <style>
+            html > body> div{
+                color: white;
+                font-size: 20px;
+                opacity: 0.7;;
+            }
+            #agradient{
+                width: 300px;
+                height: 200px;
+                background: linear-gradient(red, yellow, blue);
+            }
+            #bgradient{
+                width: 300px;
+                height: 200px;
+                /*background: linear-gradient(to left , red, white, blue); */
+                /*background: linear-gradient(to left bottom , red, white, blue); */
+                background: linear-gradient(90deg , red, yellow, blue); /*from left to right */
+            }
+            #cgradient{
+                width: 300px;
+                height: 200px;
+                background: linear-gradient(to bottom, red 25%, yellow 40% , blue 50%);
+            }
+            #dgradient{
+                width: 500px;
+                height: 300px;
+                background: radial-gradient(circle closest-corner at center center, red, yellow, blue); 
+               
+            }
+            #egradient{
+                width: 500px;
+                height: 300px;
+                background: radial-gradient(ellipse farthest-corner at center center,red , yellow ,blue);
+            }
+            #fgradient{
+                width: 50%;
+                height: 300px;
+                background: repeating-linear-gradient(to left , red 10%, yellow 20%); 
+            }
+            #ggradient{
+                width: 50%;
+                height: 300px;
+                background: repeating-Radial-gradient(circle closest-corner at center center , red 10%, yellow 20%, blue 30%); 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Linear-gradient</h1>
+        <div id="agradient"> linear-gradient(red, yellow, blue)</div><br>
+        <div id="bgradient">linear-gradient(90deg , red, white, blue)</div><br>
+        <div id="cgradient"> linear-gradient(to bottom, red 25%, yellow 40% , blue 50%);</div><br>
+        <p></p>
+        
+        <h1>Radial Gradient</h1>
+        <div id="dgradient">radial-gradient (circle closest-corner at center center, red, white, blue);</div><br>
+        <div id="egradient">radial-gradient(ellipse farthest-corner at center center,red , yellow ,blue);</div><br>
+
+        <h1>Repeating Gradient</h1>
+        <div id="fgradient"> repeating-linear-gradient(to left , red 10%, yellow 20%);</div><br>
+        <div id="ggradient"> repeating-Radial-gradient(circle closest-corner at center center , red 10%, yellow 20%, blue 30%); </div>
+    </body>
+</html>
