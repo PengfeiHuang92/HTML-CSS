@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>
+        FlexBoxes
+    </title>
+    <style>
+       img{
+         width: 300px;
+         height: 250px;
+         padding-left: 2%;
+         padding-top: 2%;
+        }
+        #horizontal {
+            display: flex;
+            flex-direction: row;
+        }
+        #vertical{
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+        }
+        .navhorizontal ul{
+            display: flex;
+            flex-flow: row nowrap;
+
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-direction: column; </h1>
+    <div id="horizontal">
+    <img src="image.jpg">
+    <img src="image_1.jpg" >
+    </div>
+    <h1>flex-direction: row;</h1>
+    <div id="vertical">
+    <img src="image_2.jpg" >
+    <img src="image_3.jpg" >
+    </div>
+
+ 
+</body>
+</html>
