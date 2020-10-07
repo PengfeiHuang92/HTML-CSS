@@ -1,0 +1,45 @@
+<html>
+
+    <head>
+        <title>FlexBox Layout</title>
+    </head>
+    <style>
+        header, footer{
+            background-color: blue;
+            width: 100%;
+         
+        }
+        body{
+            display: flex;
+            display:-webkit-flex;
+
+            flex-flow: row wrap;
+            -webkit-flex-flow:row wrap;
+        }
+        aside{
+            background-color: cadetblue;
+            flex: 1 1 120px;
+            -webkit-flex: 1 1 120px;
+        }
+        section#main{
+            background-color: chartreuse;
+            flex: 3 1 361px;
+            -webkit-flex: 3 1 361px;
+        }
+        section#topic{
+            background-color: aqua;
+            display: flex;
+            display:-webkit-flex;
+
+            flex-flow: row wrap;
+            -webkit-flow: row wrap;
+        }
+    </style>
+    <body>
+        <header></header>
+
+        <aside></aside>
+        <section id="main"></section>
+        <footer></footer>
+    </body>
+</html>

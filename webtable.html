@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+        <title>Web Table</title>
+    </head>
+    <style>
+        #tableLayout{
+            background-color: bisque;
+            border: 10px outset rgb(153,0,153);
+            width: 100%;
+            text-align: center;
+        }
+        table tr, table tr th , table tr td{
+            border: 1px solid black;
+            
+        }
+        table caption{
+            caption-side: bottom;
+            text-align: center;
+        }
+    </style>
+    <body>
+        
+        <table id="tableLayout" >
+            <caption>This is the table caption</caption> <!-- table caption-->
+            <tr >  <!-- table row-->
+                <th>AAAAA</th> <!--table heading-->
+                <th>BBBBB</th>
+                <th>CCCCC</th>
+            </tr>
+            <tr>
+                <td>DDDDD</td> <!--table cell-->
+                <td>DDDDD</td>
+                <td rowspan="2">DDDDD</td> <!-- Row Span -->
+            </tr>
+            <tr>
+                <td>EEEEE</td>
+                <td>EEEEE</td>
+            </tr>
+            <tr>
+                <td colspan="3">table row 2</td> <!-- Colomu Span-->
+            </tr>
+           
+        </table>
+
+    </body>
+</html>

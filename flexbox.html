@@ -13,18 +13,18 @@
         }
         #horizontal {
             display: flex;
-            flex-direction: row;
+            display: -webkit-flex;
+            flex-direction: column;
         }
         #vertical{
-            display: inline-flex;
+            display: flex;
+            display: -webkit-flex;
+            -webkit-flex-direction: row;
             flex-direction: row;
+            -webkit-flex-wrap: wrap-reverse;
             flex-wrap: wrap-reverse;
         }
-        .navhorizontal ul{
-            display: flex;
-            flex-flow: row nowrap;
-
-        }
+       
         ul{
             list-style: none;
         }
