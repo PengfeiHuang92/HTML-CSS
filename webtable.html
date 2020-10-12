@@ -1,13 +1,24 @@
+<!--
+
+    Row Groups:  thead, tbody, annd tfoot
+    Column Groups: <colgroup> <col xxxx/> </colgroup>
+    Levels of precedence in the table styles:
+        table cells > rows > row groups > columns > column groups > table
+-->
 <html>
 
     <head>
         <title>Web Table</title>
     </head>
     <style>
+        table{
+            table-layout: fixed;
+           /* table-layout: auto; */
+            width: 100%;
+        }
         #tableLayout{
             background-color: bisque;
             border: 10px outset rgb(153,0,153);
-            width: 100%;
             text-align: center;
         }
         table tr, table tr th , table tr td{
@@ -23,24 +34,39 @@
         
         <table id="tableLayout" >
             <caption>This is the table caption</caption> <!-- table caption-->
-            <tr >  <!-- table row-->
-                <th>AAAAA</th> <!--table heading-->
-                <th>BBBBB</th>
-                <th>CCCCC</th>
-            </tr>
-            <tr>
-                <td>DDDDD</td> <!--table cell-->
-                <td>DDDDD</td>
-                <td rowspan="2">DDDDD</td> <!-- Row Span -->
-            </tr>
-            <tr>
-                <td>EEEEE</td>
-                <td>EEEEE</td>
-            </tr>
-            <tr>
-                <td colspan="3">table row 2</td> <!-- Colomu Span-->
-            </tr>
-           
+            <colgroup>
+                <col span="2" style="background-color: coral;"/> <!--Mark the first two columns with color coral-->
+                <col style="background-color: aquamarine;"/> <!-- Mark the follow colums with color aquamarine-->
+            </colgroup>
+            <thead>
+                 <tr >  <!-- table row-->
+                    <th>AAAAAAAAAAAAAAAA</th> <!--table heading-->
+                    <th>BBBBB</th>
+                    <th>CCCCC</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>DDDDD</td> <!--table cell-->
+                    <td>DDDDD</td>
+                    <td rowspan="2">DDDDD</td> <!-- Row Span -->
+                </tr>
+                <tr>
+                    <td>EEEEE</td>
+                    <td>EEEEE</td>
+                </tr>
+          
+                <tr>
+                    <td colspan="3">table row 2</td> <!-- Colomu Span-->
+                </tr>
+            </tbody> 
+
+           <tfoot>
+               <tr>
+                   <td>Table footer</td>
+               </tr>
+           </tfoot>
         </table>
 
     </body>

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Web Table on Mobile Devices </title>
+    </head>
+    <style>
+    div{
+        background-color: antiquewhite;
+        height:55%;
+        width: 25%;
+    }
+    table{
+        table-layout: auto;
+        width: 100%;
+        border: 3px double purple;
+        height: 100%;
+    }
+    
+    table tr td{
+        border: 2px solid black;
+        padding-top: 5%;
+        padding-left: 2%;
+    }
+    #date , #time, #event{
+        height: 10%;
+    }
+    #description{
+        vertical-align: top; /* Top right the content */
+    }
+    #colStyle{
+        background-color: rgb(188, 231, 231);
+        width: 30%;
+    }
+    </style>
+    <body>
+        <div id="Mobile device">
+        <table>
+            <colgroup>
+                <col span="1" id="colStyle"/>
+            </colgroup>
+            <tr id="date">
+                <td>Date</td>
+                <td>October 17</td>
+            </tr>
+            <tr id="time">
+                <td>Time</td>
+                <td>10:00 am - 2:00 pm</td>
+            </tr>
+            <tr id="Event">
+                <td>Event</td>
+                <td>Red River Market</td>
+            </tr>
+            <tr id="description">
+                <td>Description</td>
+                <td>Shop from local vendors including produce, meat, eggs, bakery, pantry items, household goods, art, and more. Grab breakfast, lunch, coffee, or a drink while enjoying cooking demonstrations, live performances, educational family activities.</td>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html>
